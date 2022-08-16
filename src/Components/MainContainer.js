@@ -10,6 +10,8 @@ import Card5 from '../img/card5.jpg';
 import Card6 from '../img/card6.jpg';
 
 import CardMain from "./CardMain";
+import MainRightTop from "./MainRightTop";
+import MainRighBottom from "./MainRighBottom";
 const MainContainer = () => {
   return (
     <div className="mainContainer">
@@ -53,12 +55,20 @@ const MainContainer = () => {
 
           <main>
             <CardMain imgSrc={Card1} title={"Cubic Thunder"} hearts={"65"} />
+            <CardMain imgSrc={Card2} title={"Pokemon Ball"} hearts={"45"} />
+            <CardMain imgSrc={Card3} title={"Pyramid God"} hearts={"55"} />
+            <CardMain imgSrc={Card4} title={"Stunning Cube"} hearts={"65"} />
+            <CardMain imgSrc={Card5} title={"Star Crystal"} hearts={"75"} />
+            <CardMain imgSrc={Card6} title={"Crystal Bird"} hearts={"25"} />
           </main>
         </div>
       </div>
 
 
-      <div className="right"></div>
+      <div className="right">
+        <MainRightTop />
+        <MainRighBottom />
+      </div>
     </div>
   );
 };
