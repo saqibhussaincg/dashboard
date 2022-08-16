@@ -285,3 +285,30 @@
   margin-left: auto;
 }
 
+@media  screen and (max-width: 525px) {
+  .mainContainer{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mainContainer .left{
+    width: 100%;
+  }
+
+  .mainContainer .left .banner .textContainer h1{
+    font-size: 2.5em;
+  }
+
+  .mainContainer .left .banner .textContainer h2{
+    font-size: 1.7em;
+  }
+
+  .mainContainer .left .cards .filters .filter_buttons{
+    display: none;
+  }
+
+  .mainContainer .left .cards main .card_main{
+    max-width: 350px;
+  }
+}
+

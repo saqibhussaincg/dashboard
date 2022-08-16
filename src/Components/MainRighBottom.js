@@ -11,18 +11,21 @@ const MainRighBottom = () => {
 
         {
             TopSeller && TopSeller.map((seller) => {
-        <div className="topSeller">
-            <div className="topSellerImg"></div>
+                return(
+        <div className="topSeller" key={seller?.id}>
+            <div className="topSellerImg">
+                <img src={seller?.imgSrc} alt='image' />
+            </div>
             
-            <p className='topSellerName'>Sample Name <span>@sample</span></p>
+            <p className='topSellerName'>{seller?.seller_name} <span>{seller?.username}</span></p>
 
             <a href="#" className="button1 btn">Follow</a>
-        </div>  
-            })
+        </div>
+            )})
         }
 
     </div>
-  )
+  );
 }
 
 export default MainRighBottom
